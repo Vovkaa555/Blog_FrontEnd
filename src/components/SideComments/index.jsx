@@ -10,7 +10,7 @@ export const SideComments = ({ items }) => {
   return (
     <List>
       {items.map((obj) => (
-        <React.Fragment key={obj.id}>
+        <React.Fragment key={obj._id}>
           <ListItem alignItems="flex-start">
             <ListItemAvatar>
               <Avatar alt={obj.user.fullName} src={obj.user.avatarUrl} />
